@@ -28,6 +28,7 @@ class Poem(object):
         """Set the content of the poem"""
         self.content = content
 
+
     def getContent(self):
         """Return the content of the poem"""
         return self.content
@@ -38,27 +39,39 @@ class Poem(object):
 
 def main():
     # Assign the first poem to class Poem
-    p1 = Poem("John Doe", "Title")
+    p1 = Poem("Alfred Lord Tennyson", "The Eagle")
     p1contentlist = []
-    p1contentlist.append("This is the first line")
-    p1contentlist.append("This is the second line")
+    p1contentlist.append("He clasps the crag with crooked hands;")
+    p1contentlist.append("Close to the sun in lonely lands,")
+    p1contentlist.append("Ring’d with the azure world, he stands.")
+    p1contentlist.append("The wrinkled sea beneath him crawls;")
+    p1contentlist.append("He watches from his mountain walls,")
+    p1contentlist.append("And like a thunderbolt he falls.")
+
+
     p1.setContent(p1contentlist)
 
     # Assign the second poem to class Poem
-    p2 = Poem("Jane Doe", "Title 2")
+    p2 = Poem("Gelett Burgess", "Purple Cow")
     p2contentlist = []
-    p2contentlist.append("This is the first line")
-    p2contentlist.append("This is the second line")
-    p2contentlist.append("This is the third line")
+    p2contentlist.append("I never saw a Purple Cow,")
+    p2contentlist.append("I never hope to see one,")
+    p2contentlist.append("But I can tell you, anyhow,")
+    p2contentlist.append("I'd rather see than be one!")
     p2.setContent(p2contentlist)
 
     # Assign the third poem to class Poem
-    p3 = Poem("Jay Doe", " Title 3")
+    p3 = Poem("Robert Frost", "Fire and Ice")
     p3contentlist = []
-    p3contentlist.append("This is the first line")
-    p3contentlist.append("This is the second line")
-    p3contentlist.append("This is the third line")
-    p3contentlist.append("This is the fourth line")
+    p3contentlist.append("Some say the world will end in fire,")
+    p3contentlist.append("Some say in ice.")
+    p3contentlist.append("From what I've tasted of desire")
+    p3contentlist.append("I hold with those who favor fire.")
+    p3contentlist.append("But if it had to perish twice,")
+    p3contentlist.append("I think I know enough of hate")
+    p3contentlist.append("To say that for destruction ice")
+    p3contentlist.append("Is also great")
+    p3contentlist.append("and would suffice.")
     p3.setContent(p3contentlist)
 
     print(p1)
