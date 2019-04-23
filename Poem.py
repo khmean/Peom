@@ -28,8 +28,13 @@ class Poem(object):
         """Set the content of the poem"""
         self.content = content
 
+    def setHaiku(self):
+        """Test to see if the poem is a Haiku and return false if not a Haiku"""
+        Haiku = False
+        return Haiku
+
     def __str__(self):
-        return "Author: " + self.author + "\nTitle: " + self.title + "\n"
+        return "Author: " + self.author + "\nTitle: " + self.title
 
 
 def main():
@@ -69,20 +74,27 @@ def main():
 
     # print the results of the Poem class
     print(p1)
+    print("Is poem: {} a Haiku? ".format(p1.getTitle()))
+    print(p1.setHaiku())
+    print("")
     for p1index in range(len(p1.content)):
         print(p1.content[p1index])
 
     print("")
-
     print(p2)
+    print("Is poem: {} a Haiku? ".format(p2.getTitle()))
+    print(p2.setHaiku())
+    print("")
     for p2index in range(len(p2.content)):
         print(p2.content[p2index])
 
     print("")
     print(p3)
+    print("Is poem: {} a Haiku? ".format(p3.getTitle()))
+    print(p3.setHaiku())
+    print("")
     for p3index in range(len(p3.content)):
         print(p3.content[p3index])
-
     print("")
     # Print the number of Poem instances that were used
     print("There was {}".format(Poem.num_of_poems) + " poems.")
