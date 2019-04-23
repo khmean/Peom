@@ -28,13 +28,8 @@ class Poem(object):
         """Set the content of the poem"""
         self.content = content
 
-
-    def getContent(self):
-        """Return the content of the poem"""
-        return self.content
-
     def __str__(self):
-        return "Author: " + self.author + "\nTitle: " + self.title + "\n" + str(self.content) + "\n"
+        return "Author: " + self.author + "\nTitle: " + self.title + "\n"
 
 
 def main():
@@ -47,8 +42,6 @@ def main():
     p1contentlist.append("The wrinkled sea beneath him crawls;")
     p1contentlist.append("He watches from his mountain walls,")
     p1contentlist.append("And like a thunderbolt he falls.")
-
-
     p1.setContent(p1contentlist)
 
     # Assign the second poem to class Poem
@@ -74,10 +67,24 @@ def main():
     p3contentlist.append("and would suffice.")
     p3.setContent(p3contentlist)
 
+    # print the results of the Poem class
     print(p1)
-    print(p2)
-    print(p3)
+    for p1index in range(len(p1.content)):
+        print(p1.content[p1index])
 
+    print("")
+
+    print(p2)
+    for p2index in range(len(p2.content)):
+        print(p2.content[p2index])
+
+    print("")
+    print(p3)
+    for p3index in range(len(p3.content)):
+        print(p3.content[p3index])
+
+    print("")
+    # Print the number of Poem instances that were used
     print("There was {}".format(Poem.num_of_poems) + " poems.")
 
 
